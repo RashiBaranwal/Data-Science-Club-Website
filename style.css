@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.header {
+  background-color: black;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px 25px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  height: 100px;
+}
+.logo img {
+  height: 100px;
+}
+.links {
+  text-align: right;
+}
+.links a {
+  text-decoration: none;
+}
+.logo .fa {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 100px;
+  padding: 0px 20px 0px 0px;
+  cursor: pointer;
+  display: none;
+}
+.desktop-banner img,
+.mobile-banner img {
+  width: 100%;
+}
+
+.mobile-banner {
+  display: none;
+}
+.links a{
+  color: aliceblue;
+}
+.heading font{
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0px 10px 0px;
+}
+
+.heading hr{
+  width: 15%;
+  background-color: orange;
+  margin: auto;
+  height: 5px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+}
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 25px;
+  grid-gap: 20px;
+}
+.about .about-one img{
+  width: 100%;
+}
+.about .about-two p{
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.course{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 25px;
+  grid-gap: 20px;
+}
+.course .course-item img{
+  width: 100%;
+}
+.course .course-item font{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0px 10px 0px;
+  font-weight: 600;
+}
+
+.course .course-item p{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.instructor{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0px 25px;
+  grid-gap: 40px;
+  }
+.instructor  img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.instructor .instructor-1{
+  grid-row: 1/span 2;
+  grid-column: 1/span 2;
+}
+.instructor font{
+  display: block;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 0px 5px 10px;
+}
+.instructor p{
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+}
+.instructor .fa{
+  padding: 10px 0px 0px 12px;
+  font-size: 20px;
+}
+
+.instructor-1 font,.instructor-1 p{
+  text-align: center;
+}
+.instructor .instructor-1{
+  text-align: center;
+}
+
+.contact-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  padding: 0px 25px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.contact-form input{
+  height: 45px;
+  border: 1px solid black;
+  outline: none;
+  width: 100%;
+  margin-top: 2%;
+  padding: 10px;
+}
+
+.contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 2%;
+
+}
+.contact-form input[type="Submit"]{
+  background-color: black;
+  outline: none;
+  border: none;
+  width: 30%;
+  margin: center;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mymap{
+  width: 100%;
+  padding: 30px 25px;
+}
+
+.footer{
+  padding: 30px 25px;
+  background-color: black;
+}
+.footer font{
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*media query code*/
+@media only screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto;
+    padding: 0px;
+  }
+  .links {
+    background-color: black;
+    display: none;
+    padding: 0px 0px 30px 0px;
+  }
+  .links a {
+    display: block;
+    padding: 30px 0px 0px 30px;
+    text-align: left;
+  }
+  .logo .fa {
+    display: block;
+  }
+  .showmynav {
+    display: block;
+  }
+  .desktop-banner{
+    display: none;
+  }
+  .mobile-banner{
+    display: block;
+  }
+  .about{
+  display: grid;
+  grid-template-columns: 1fr ;
+  padding: 0px 5px;
+  }
+  .heading font{
+    font-size: 30px;
+  }
+  .course{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  padding: 0px 5px;
+  grid-gap: 20px;
+}
+
+.course .course-item font{
+  
+  text-align: center;
+  font-size: 20px;
+  
+}
+.instructor{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 5px;
+  grid-gap: 20px;
+  text-align: center;
+  }
+  .instructor .instructor-1{
+  grid-row:1/span 2;
+  grid-column:1/span 2;
+  padding: 50px 0px 0px 0px;
+}
+.instructor p,.instructor font{
+  text-align: center;
+}
+.contact-form{
+  width: 95%;
+  margin: auto;
+}
+.contact-form input[type="Submit"]{
+ width: 50%;
+}
+}
+
